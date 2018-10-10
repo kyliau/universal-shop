@@ -111,14 +111,12 @@ function wrapJsAction(ngElementCtor: NgElementConstructor<{}>) {
 })
 export class AddToCartModule {
   constructor(injector: Injector) {
-    console.log("ADD TO CART MODULE CONSTRUCTOR CALLED")
     const components = {
       'add-to-cart': AddToCartComponent,
       'cart-badge': CartBadgeComponent,
     };
     const isBrowserEnv = !!window;
     const isDispatcherInitialized = !!getDispatcher();
-    console.error(`browser? ${isBrowserEnv}, dispatcher? ${isDispatcherInitialized}`);
     for (const tagName of Object.keys(components)) {
       const comp = components[tagName];
       // Wrap the Component in NgElement

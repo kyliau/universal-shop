@@ -34,8 +34,8 @@
               }
             ],
             "scripts": [
-              "../../../jsaction/dist/contract.js",
-              "../../../jsaction/dist/dispatcher.js"
+              "./jsaction/contract.js",
+              "./jsaction/dispatcher.js"
             ],
             "lazyModules": [
               "src/app/lazy-img/lazy-img.module",
@@ -51,15 +51,15 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": false,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": false
             }
           }
         },

@@ -19,7 +19,7 @@ export class AppBootstrapModule {
     private loader: NgModuleFactoryLoader,
   ) {
     // activate jsAction
-    // initEventContract();
+    initEventContract();
   }
 
   private load<T>(module: Promise<{ [k: string]: NgModuleFactory<T> }>, factory: string): Promise<NgModuleRef<T>> {
