@@ -8,6 +8,8 @@ An example repo to compare different Angular SSR stratgies. (Forked from https:/
 
 3. [level3](https://github.com/vikerman/universal-shop/tree/master/level3/universal-shop) - SSR + Bring up an empty shell app on the client - Provides a base line of how small we can make the client JS bundle including BrowserModule and nothing else.
 
-4. [level4](https://github.com/vikerman/universal-shop/tree/master/level4/universal-shop) - SSR + Bring up add-to-cart and cart-icon Angular elements without bootstrapping the whole app  - Provides a more realistic sample of bringing up interesting parts of the app which we want to make interactive first.
+4. [level4](https://github.com/vikerman/universal-shop/tree/master/level4/universal-shop) - SSR + Bring up add-to-cart and cart-icon Angular elements without bootstrapping the whole app  - Provides a more realistic sample of bringing up interesting parts of the app which we want to make interactive first (Progressive bootstrap).
 
-5. level5 (TODO): Make the sidenav with animation active without bringing up the full app. Bootstrap the full app on route changes.
+5. level5 - Events buffering with JsAction
+
+(TODO): Make the sidenav with animation active without bringing up the full app. Bootstrap the full app on route changes.
